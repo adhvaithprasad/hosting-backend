@@ -1,6 +1,7 @@
 var pushover = require('pushover');
 var repos = pushover('/tmp/repos');
 var express = require('express');
+const path = require('path');
 repos.on('push', function (push) {
     console.log('push ' + push.repo + '/' + push.commit
         + ' (' + push.branch + ')'
@@ -42,9 +43,7 @@ function authentication(req, res, next) {
  
 }
 var app = express()
-.get('/', function (req, res) {
-  res.send('about')
-})
+.use('/console',express.static(__dirname + '/frontend'))
 .use('/git',authentication)
 
 .use('/git',function(req, res, next){
