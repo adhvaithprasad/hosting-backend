@@ -1,0 +1,111 @@
+    .before-login{
+      height: 100%;
+       font-family: 'IBM Plex Sans', sans-serif !important;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .sign-in-div{
+        background:white;
+        display:flex;
+        align-items:center;
+        flex-direction:column;
+    padding: 20px;
+    box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+    border-radius: 10px;
+    height: 600px;
+    width: 352px;
+    }
+    .sign-in-div * {
+        margin:10px;
+    }
+    .sign-in-div input {
+    font-size: 1.2rem;
+    line-height: 1.33;
+   
+    width: 304px;
+    border: 1px solid rgba(0,0,0,0.6);
+    border-radius: 5px;
+    outline: none;
+    padding: 22px 12px 6px;
+    }
+    .sign-in-div input:focus-visible {
+    border: 2px solid blue;
+    }
+    .title{
+        width:100%;
+    }
+    .log-in-btn{
+       height: 50px;
+    width: 100%;
+    background: #0066ff;
+    border: none;
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: white;
+    /* padding: 28px 16px; */
+    border-radius: 30px;
+    }
+    .g-in-btn{
+     height: 50px;
+    width: 100%;
+    border: 1px solid black;
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #555555;
+    /* padding: 28px 16px; */
+    background: white;
+    border-radius: 30px;
+    }
+    .or-tag{
+        width:100%;
+        display:flex;
+    }
+    .or-tag hr{
+        width:40%;
+    }
+    .wrapper .f-ps-btn {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 600;
+    background: white;
+    color: #0073b1;
+}
+.wrapper .f-ps-btn:hover {
+    background: #b5e4ff;
+}
+.wrapper{
+  width: 100%;
+  display: inline-flex;
+}
+
+ .sign-up-div{
+        background:white;
+        display:none;
+        align-items:center;
+        flex-direction:column;
+    padding: 20px;
+    box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+    border-radius: 10px;
+    height: 616px;
+    width: 352px;
+    }
+    .sign-up-div * {
+        margin:10px;
+    }
+    .sign-up-div input {
+    font-size: 1.2rem;
+    line-height: 1.33;
+   
+    width: 304px;
+    border: 1px solid rgba(0,0,0,0.6);
+    border-radius: 5px;
+    outline: none;
+    padding: 22px 12px 6px;
+    }
+    .sign-up-div input:focus-visible {
+    border: 2px solid blue;
+    }

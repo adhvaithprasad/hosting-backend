@@ -1,0 +1,126 @@
+#kanban_board #tasks.page-wrapper {
+  max-width: 1100px;
+  margin: 20px auto;
+}
+
+/* SECTIONS */
+
+#kanban_board #sections {
+  display: flex;
+  overflow-x: auto;
+  height: calc(100vh - 110px);
+}
+
+#kanban_board .add-section {
+  margin-bottom: 10px;
+  background: #32479b;
+  padding: 7px 14px;
+  border: none;
+  color: #e7e7e7;
+  border-radius: 50px;
+}
+#kanban_board .section {
+  flex: 0 0 300px;
+  padding: 10px;
+  margin-right: 15px;
+  min-height: 800px;
+}
+
+#kanban_board .title {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  align-items: baseline;
+}
+#kanban_board .title .text {
+  font-weight: bold;
+  color: #a2a2a2;
+  text-transform: capitalize;
+}
+
+#kanban_board button {
+  cursor: pointer;
+}
+#kanban_board .title .toolbar {
+  display: flex;
+  align-items: center;
+}
+#kanban_board .title .toolbar button {
+  background: none;
+  border: none;
+  padding: 7px;
+  width: 28px;
+  border-radius: 50px;
+  height: 28px;
+  color: #fff;
+}
+
+#kanban_board .title .toolbar button.add {
+  background-color: #1448e5;
+}
+
+#kanban_board .title .toolbar button.edit {
+  background-color: #dfdfdf;
+  color: #999;
+  margin-left: 5px;
+  /* font-size: 1.1rem; */
+}
+
+#kanban_board .title .toolbar button.delete {
+  background-color: #dfdfdf;
+  color: #d94848;
+  margin-left: 5px;
+  /* font-size: 1.1rem; */
+}
+
+/* TASKS */
+#kanban_board .task {
+  background: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 3px 0px 1px #e4e4e4;
+  margin-bottom: 10px;
+}
+
+#kanban_board .task .title .text {
+  color: #3a5194;
+}
+
+#kanban_board .task .handle {
+  width: 100%;
+  text-align: center;
+  cursor: all-scroll;
+  margin-top: 10px;
+  color: #8f8f8f;
+}
+
+#kanban_board .dropzone {
+  text-align: center;
+  border: 2px dashed #ccc;
+  padding: 40px 10px;
+  margin-bottom: 15px;
+  color: #707070;
+  /* display: none; */
+}
+
+#kanban_board .no-tasks {
+  text-align: center;
+  background: #ffffff9c;
+  padding: 15px 10px;
+  border: 3px dashed #cccccc40;
+}
+#kanban_board.no-tasks i {
+  font-size: 2rem;
+  margin-bottom: 7px;
+  color: silver;
+}
+
+#kanban_board .footer {
+  position: fixed;
+  bottom: 0;
+  /* padding: 15px;
+  background: #fff; */
+  border-radius: 50px;
+  margin-bottom: 15px;
+  /* box-shadow: 1px 2px 5px 1px #ccc; */
+}
